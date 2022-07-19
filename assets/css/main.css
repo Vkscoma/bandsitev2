@@ -2335,7 +2335,7 @@ body.is-touch .main {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    margin-bottom: 1em;
+    border-bottom: 2px solid #000;
   }
 
   #two {
@@ -2458,7 +2458,7 @@ body.is-touch .main {
   }
 
   .nav-open nav {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 
   .nav-open .nav-toggle {
