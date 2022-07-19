@@ -14,6 +14,7 @@
   --clr-dark: #282d35;
   --clr-act: #16e0bd;
   --clr-dark-blue: #21222a;
+  --clr-dark-blue-t: #21222ac7;
 
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -695,7 +696,7 @@ table {
 /* Box */
 
 .box {
-  background: #39454bc4;
+  background: var(--clr-dark-blue-t);
   color: #fff;
   padding: 2em;
 }
@@ -2401,7 +2402,7 @@ body.is-touch .main {
   #header h1 {
     z-index: 1000;
     width: 100%;
-    background-color: rgb(13, 13, 19);
+    background-color: var(--clr-dark-blue);
   }
 
   .icon #hamburger {
@@ -2428,7 +2429,7 @@ body.is-touch .main {
 
   nav {
     position: fixed;
-    background-color: var(--clr-dark-blue);
+    background-color: var(--clr-dark);
     color: var(--clr-light);
     top: 0;
     bottom: 0;
