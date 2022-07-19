@@ -11,8 +11,9 @@
   --fw-bold: 900;
 
   --clr-light: #fff;
-  --clr-dark: #242424;
+  --clr-dark: #282d35;
   --clr-act: #16e0bd;
+  --clr-dark-blue: #21222a;
 
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -694,9 +695,13 @@ table {
 /* Box */
 
 .box {
-  background: #ffffff;
-  color: #39454b;
+  background: #39454bc4;
+  color: #fff;
   padding: 2em;
+}
+
+.custom-box {
+  background-color: var(--clr-light);
 }
 
 .box > :last-child {
@@ -1903,7 +1908,7 @@ body.is-touch .poptrox-popup .closer {
   top: 0;
   width: 100%;
   color: #fff;
-  background: rgba(0, 0, 0, 0.95);
+  background: var(--clr-dark-blue);
   height: 3em;
   line-height: 3em;
   box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
@@ -2243,7 +2248,7 @@ body.is-touch .main {
   line-height: 1em;
   font-size: 2rem;
   padding: 1.5em;
-  background: #000;
+  background: var(--clr-dark-blue);
   color: var(--clr-light);
   overflow: hidden;
 }
@@ -2396,7 +2401,7 @@ body.is-touch .main {
   #header h1 {
     z-index: 1000;
     width: 100%;
-    background-color: black;
+    background-color: rgb(13, 13, 19);
   }
 
   .icon #hamburger {
@@ -2423,7 +2428,7 @@ body.is-touch .main {
 
   nav {
     position: fixed;
-    background-color: var(--clr-dark);
+    background-color: var(--clr-dark-blue);
     color: var(--clr-light);
     top: 0;
     bottom: 0;
