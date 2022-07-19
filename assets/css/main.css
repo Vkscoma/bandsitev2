@@ -2392,6 +2392,13 @@ body.is-touch .main {
     justify-content: center;
     align-items: center;
   }
+
+  #header h1 {
+    z-index: 1000;
+    width: 100%;
+    background-color: black;
+  }
+
   .icon #hamburger {
     display: inline-block;
     width: 2em;
@@ -2474,8 +2481,9 @@ body.is-touch .main {
     position: absolute;
     right: 0.5em;
     cursor: pointer;
-    z-index: 1000;
+    z-index: 10000;
   }
+
   .nav {
     position: fixed;
     background-color: var(--clr-dark);
@@ -2485,8 +2493,8 @@ body.is-touch .main {
     left: 0;
     right: 0;
     z-index: 100;
-    transform: translateX(100%);
-    transition: transform 250ms ease-in-out;
+    transform: translateY(-100%);
+    transition: transform 650ms ease-in-out;
   }
 
   .nav__list {
@@ -2507,7 +2515,7 @@ body.is-touch .main {
     text-decoration: none;
   }
   .nav-open nav {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 
   .nav-open .nav-toggle {
