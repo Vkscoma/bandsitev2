@@ -22,6 +22,9 @@
   --fs-body: 1rem;
 
   --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25);
+
+  --success-color: #74e17e;
+  --error-color: #e84545;
 }
 
 * {
@@ -699,6 +702,7 @@ table {
   background: var(--clr-dark-blue-t);
   color: #fff;
   padding: 2em;
+  border-radius: 5px;
 }
 
 .custom-box {
@@ -869,6 +873,7 @@ form > .fields {
   flex-wrap: wrap;
   width: calc(100% + 3em);
   margin: -1.5em 0 2em -1.5em;
+  color: var(--clr-dark);
 }
 
 form > .fields > .field {
@@ -2040,10 +2045,10 @@ body {
 }
 
 .main.style1 > .content {
-  -moz-transition: opacity 1s ease;
-  -webkit-transition: opacity 1s ease;
-  -ms-transition: opacity 1s ease;
-  transition: opacity 1s ease;
+  -moz-transition: opacity 0.5s ease;
+  -webkit-transition: opacity 0.5s ease;
+  -ms-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
   -moz-transform: translateZ(0);
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
@@ -2072,10 +2077,10 @@ body {
 }
 
 .main.style2 > .content {
-  -moz-transition: -moz-transform 1s ease;
-  -webkit-transition: -webkit-transform 1s ease;
-  -ms-transition: -ms-transform 1s ease;
-  transition: transform 1s ease;
+  -moz-transition: -moz-transform 0.8s ease;
+  -webkit-transition: -webkit-transform 0.8s ease;
+  -ms-transition: -ms-transform 0.8s ease;
+  transition: transform 0.8s ease;
   -moz-transform: translateZ(0);
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
@@ -2103,19 +2108,19 @@ body {
   justify-content: flex-end;
 }
 
-.main.style2.inactive.left > .content {
+/* .main.style2.inactive.left > .content {
   -moz-transform: translateX(-100%);
   -webkit-transform: translateX(-100%);
   -ms-transform: translateX(-100%);
   transform: translateX(-200%);
-}
+} */
 
-.main.style2.inactive.right > .content {
+/* .main.style2.inactive.right > .content {
   -moz-transform: translateX(100%);
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-}
+} */
 
 .main.style3 {
   text-align: center;
@@ -2123,7 +2128,7 @@ body {
 }
 
 .main.style3 .content > header {
-  margin-bottom: 2em;
+  margin-bottom: 0.5em;
 }
 
 .main.style3.primary {
@@ -2370,6 +2375,7 @@ body.is-touch .main {
   -ms-transform: translateY(0);
   transform: translateY(0);
   position: relative;
+  margin-bottom: 1em;
 }
 
 #contact.inactive .box {
@@ -2377,6 +2383,14 @@ body.is-touch .main {
   -webkit-transform: translateY(100%);
   -ms-transform: translateY(100%);
   transform: translateY(100%);
+}
+
+.success-msg-color {
+  color: var(--success-color) !important;
+}
+
+.error-msg-color {
+  color: var(--error-color);
 }
 
 @media screen and (max-width: 736px) {

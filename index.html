@@ -51,7 +51,7 @@
 
     <!-- One -->
     <section id="one" class="main style2 right dark fullscreen">
-      <div class="content box style2">
+      <div class="content box style2 custom-margin">
         <header>
           <h2>About Us</h2>
         </header>
@@ -90,30 +90,38 @@
         <header>
           <h2>Say Hello!</h2>
           <p>
-            Reach out to us on Social Media or use the form below to connect
-            with us.
+            For booking, media inquires or to show the band some love, use the
+            contact form below!
           </p>
         </header>
         <div class="box custom-box">
-          <form method="post" action="#">
+          <form
+            method="post"
+            action="https://formspree.io/f/xoqbjjkk"
+            id="my-form"
+          >
             <div class="fields">
               <div class="field half">
-                <input type="text" name="name" placeholder="Name" />
+                <input type="text" name="name" placeholder="Name" required />
               </div>
               <div class="field half">
-                <input type="email" name="email" placeholder="Email" />
+                <input type="email" name="email" placeholder="Email" required />
               </div>
               <div class="field">
                 <textarea
                   name="message"
                   placeholder="Message"
                   rows="6"
+                  required
                 ></textarea>
               </div>
             </div>
             <ul class="actions special">
-              <li><input type="submit" value="Send Message" /></li>
+              <li>
+                <input type="submit" value="Send Message" id="form-button" />
+              </li>
             </ul>
+            <p id="form-status"></p>
           </form>
         </div>
       </div>
