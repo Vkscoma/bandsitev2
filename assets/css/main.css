@@ -2053,7 +2053,7 @@ body {
   -ms-transform: translateZ(0);
   transform: translateZ(0);
   opacity: 1;
-  margin: 0;
+  margin: 1.5em 0 0 0;
   position: absolute;
   bottom: 0;
 }
