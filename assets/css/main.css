@@ -2215,9 +2215,9 @@ body.is-touch .main {
     display: none !important;
   }
 
-  .main.style2 .button.anchored {
+  /* .main.style2 .button.anchored {
     display: none;
-  }
+  } */
 
   .main.style2 .content {
     width: 100%;
