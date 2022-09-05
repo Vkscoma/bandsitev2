@@ -1928,14 +1928,16 @@ body.is-touch .poptrox-popup .closer {
 
 #header h1 a {
   font-size: 1.25em;
+  padding-left: 0.5em;
 }
 
 #header nav {
   position: absolute;
-  right: 0.5em;
+  right: 0em;
   top: 0;
   height: 3em;
   line-height: 3em;
+  padding-right: 1em;
 }
 
 .hamburger {
@@ -1979,6 +1981,7 @@ body.is-touch .poptrox-popup .closer {
 
   #header h1 a {
     font-size: 1em;
+    padding-left: 0;
   }
 
   #header nav {
@@ -2405,7 +2408,7 @@ div.band__footer-container > p > a:visited {
   -ms-transform: translateY(0);
   transform: translateY(0);
   position: relative;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 #contact.inactive .box {
