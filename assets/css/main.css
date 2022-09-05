@@ -132,11 +132,7 @@ body {
 
 @media (max-width: 450px) {
   body {
-    background: url("images/DarkerBandPhoto.png") no-repeat center;
-    height: 100%;
-    min-width: 320px;
-    background-size: contain;
-    background-color: #000;
+    background: #000;
   }
 }
 
@@ -2344,7 +2340,7 @@ div.band__footer-container > p > a:visited {
 /*-- Intro --*/
 
 /* #intro {
- background: url("images/DarkerBandPhoto.png");
+  background: url("images/DarkerBandPhoto.png");
   background-size: 256px 256px, cover;
   background-attachment: fixed, fixed;
   background-position: top left, bottom center;
@@ -2370,6 +2366,11 @@ div.band__footer-container > p > a:visited {
 }
 
 @media screen and (max-width: 450px) {
+  #intro {
+    background: url("images/DarkerBandPhoto.png") no-repeat center center fixed;
+    background-size: contain;
+  }
+
   #one {
     background: url("images/BandPhoto1.JPG") no-repeat center center fixed;
     -webkit-background-size: cover;
